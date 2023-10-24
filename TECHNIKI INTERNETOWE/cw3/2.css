@@ -1,0 +1,19 @@
+section{
+  border: 1px solid blue;
+  margin: 0 0 10px 0;
+ 
+ 
+}
+.clearer{
+  clear: left;
+}
+p{
+  margin: 0;
+}
+footer{
+  border: 1px solid red;
+ 
+}
+img{
+  float: left;
+}

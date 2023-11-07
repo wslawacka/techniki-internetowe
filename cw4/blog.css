@@ -20,6 +20,7 @@ main{
 .post{
   padding: 23px 15px;
   width: 50%;
+  text-align: justify;
 }
 
 .wpisy{

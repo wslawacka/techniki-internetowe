@@ -1,0 +1,79 @@
+body{
+margin: 0;
+width: 100vw;
+height: 100vh;
+}
+header{
+  background-image: url("leaves.jpg");
+  justify-content: center;
+  height: 200px;
+  border-radius: 8px;
+  margin: 0 10px 24px 10px;
+  color: rgb(187, 230, 187);
+  text-shadow: 2px 2px 1px rgb(15, 88, 15);
+  display: flex;
+  align-items: center;
+}
+main{
+  display: flex;
+  margin: 10px;
+}
+  
+nav{
+ flex: 1;
+ box-shadow: 1px -1px 4px rgb(162, 253, 162);
+ border-radius: 8px;
+ padding: 24px 12px;
+ display: flex;
+ flex-direction: column;
+ font-size: 20px;
+ line-height: 40px;
+ font-weight: bold;
+}
+nav a{
+  color: rgb(35, 92, 46);
+  
+}
+.side{
+  flex: 3;
+  background-color: rgb(182, 255, 220, 0.1);
+  box-shadow: 3px 3px 3px rgba(39, 89, 39, 0.7);
+  border-radius: 8px;
+  text-align: justify;
+  padding: 10px;
+}
+.side::first-letter{
+  border: 2px solid #000;
+  font-weight: bold;
+}
+.articles{
+  flex: 6;
+  padding: 20px 10px;
+  border-radius: 8px;
+  text-align: justify;
+}
+footer{
+  border-top: 3px solid #000;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  padding: 12px;
+  margin-top: 50px;
+}
+h1{
+  text-align: center;
+  font-size: 54px;
+}
+
+
+@media only screen and (max-width: 600px){
+  main{
+    flex-direction: column;
+  }
+  header{
+    height: 100px;
+  }
+  h1{
+    font-size: 30px;
+  }
+}

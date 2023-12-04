@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formularze</title>
+  <link rel="stylesheet" href="zadanie.css">
+</head>
+<body>
+  <form action="">
+  <div class="container">
+    <p>Kontrolki wielokrotnego wyboru</p>
+    <h3>Zaznacz dowolną ilość kratek</h3>
+    <input type="checkbox" id="opcja1">
+    <label for="opcja1">Opcja 1</label><br>
+    <input type="checkbox" id="opcja2">
+    <label for="opcja2">Opcja 2</label><br>
+    <input type="checkbox" id="opcja3">
+    <label for="opcja3">Opcja 3</label>
+
+    <h3>Zaznacz dowolną ilość opcji z listy</h3>
+    <select size="3" multiple>
+      <option>Brak</option>
+      <option>Opcja 1</option>
+      <option>Opcja 2</option>
+      </select>
+  </div>
+  <div class="container">
+    <p>Kontrolki jednokrotnego wyboru</p>
+    
+    <h3>Wybierz tylko jedną opcję</h3>
+    <input type="radio" id="opcja1" name="opcja" checked="checked">
+    <label for="opcja1">Opcja 1 wstępnie zaznaczona</label><br>
+    <input type="radio" id="opcja2" name="opcja">
+    <label for="opcja2">Opcja 2</label><br>
+    <input type="radio" id="opcja3" name="opcja">
+    <label for="opcja3">Opcja 3</label>
+    <h3>Wybierz jedną opcję z listy</h3>
+    
+    <select>
+        <option>Brak</option>
+        <option>Opcja 1</option>
+        <option>Opcja 2</option>
+        <option>Opcja 3</option>
+        <option>Opcja 4</option>
+    </select>
+  </div>
+  <div class="container">
+    <p>Pole tekstowe</p>
+    <h3>Napisz opinię</h3>
+    <textarea cols="50" rows="4" placeholder="Dodaj swoją opinię"></textarea>
+  </div>
+  <button type="submit">Zatwierdź</button>
+</form>
+</body>
+</html>

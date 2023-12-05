@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ukryty tekst</title>
+</head>
+<body>
+  <p id="p1">
+    Oleśnica pod Wrocławiem, Września pod Poznaniem oraz Stargard Szczeciński to - według "Pulsu Biznesu" - trzy lokalizacje, na których może powstać warta 1 mld euro fabryka Volkswagena. Ważne, gdzie działka będzie najszybciej.
+  </p>
+  <a href="#" id="a1" onclick="ukryj(this.id)" onclick="pokaz()">Pokaż</a>
+  <p id="p2" style="display: none;">
+    Wg informacji gazety z sześciu działek, o powierzchni 300-350 ha z bocznicą kolejową największe szanse mają te trzy. To tereny, na których kiedyś były lotniska. Nie są to grunty rolne, co znacznie skraca drogę do rozpoczęcia inwestycji. Jednak do zrobienia jest bardzo dużo. Dlatego, nawet jeśli szybko zostaną załatwione wszelkie formalności i wykupione tereny, budowa fabryki może ruszyć najwcześniej za rok - czytamy w "Pulsie Biznesu".
+  </p>
+  <p id="p3">
+    TAlior Bank wycofał ze swoich oddziałów franki szwajcarskie w gotówce. Ten, komu kończy się lokata w tej walucie, musi się zgodzić na wypłatę pieniędzy w złotych bądź na horrendalnie drogi przelew franków na konto walutowe w innym banku. Ekipa pyta: dlaczego bank zostawia klientów na lodzie?
+  </p>
+  <a href="#" id="a2" onclick="ukryj(this.id)" onclick="pokaz()">Pokaż</a>
+  <p id="p4" style="display: none;">
+    Oleśnica pod Wrocławiem, Września pod Poznaniem oraz Stargard Szczeciński to - według "Pulsu Biznesu" - trzy lokalizacje, na których może powstać warta 1 mld euro fabryka Volkswagena. Ważne, gdzie działka będzie najszybciej.
+  </p>
+  <script>
+    function ukryj(id)
+    {
+      link=document.getElementById(id);
+      if(link.innerHTML=="Pokaż")
+      {
+        link.innerHTML="Ukryj";
+        if(id=='a1'){
+        document.getElementById("p2").style.display='block';
+        }
+        else {
+          document.getElementById("p4").style.display='block';
+        }
+      }
+      else 
+      {
+        link.innerHTML="Pokaż";
+        if(id=='a1'){
+        document.getElementById("p2").style.display='none';
+        }
+        else {
+          document.getElementById("p4").style.display='none';
+        }
+      }
+    }
+    function pokaz()
+    {
+     
+    }
+  </script>
+</body>
+</html>

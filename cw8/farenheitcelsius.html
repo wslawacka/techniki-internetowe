@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farenheit to Celsius</title>
+</head>
+<body>
+  <form>
+    <p>
+      <label>Farenheit</label>
+      <input id="Far" type="number" placeholder="Farenheit" onkeyup="farToCel(this.value)">
+    </p>
+    <p>
+      <label>Celsius</label>
+      <input id="Cel" type="number" placeholder="Celsius" onkeyup="celToFar(this.value)">
+    </p>
+    <input type="reset">
+  </form>
+  <script>
+    function celToFar(c)
+    {
+      let far=(c*9)/5+32;
+      document.getElementById("Far").value=far.toFixed(2);
+    }
+    function farToCel(f)
+    {
+      let cel=((f-32)*5)/9;
+      document.getElementById("Cel").value=cel.toFixed(2);
+    }
+  </script>
+</body>
+</html>

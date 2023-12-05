@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miles to kilometers</title>
+</head>
+<body>
+  <form>
+    <p>
+      <label>Miles</label>
+      <input id="Mil" type="number" onkeyup="milToKm(this.value)">
+    </p>
+    <p>
+    <label>Kilometers</label>
+    <input id="Km" type="number" onkeyup="kmToMil(this.value)">
+    </p>
+    <input type="reset">
+  </form>
+  <script>
+    function milToKm(m)
+    {
+      let km=m*1.6;
+      document.getElementById("Km").value=km.toFixed(2);
+    }
+    function kmToMil(k)
+    {
+      let m=k/1.6;
+      document.getElementById("Mil").value=m.toFixed(2);
+    }
+  </script>
+</body>
+</html>

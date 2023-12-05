@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onmouse up/down</title>
+</head>
+<body>
+  <p onmousedown="changeColors(this, 'red', '24pt')" onmouseup="changeColors(this, 'green', '18pt')">Naciśnij i przytrzymaj klawisz myszy. Następnie zwolnij klawisz myszy.<br>Funkcja zmieni kolor tekstu najpierw na czerwony, a następnie na zielony.<br>Funkcja zmieni także rozmiar tekstu - najpierw na 24pt, a po zwolnieniu myszy na 18pt.</p>
+  <script>
+    function changeColors(element, color, size)
+    {
+      element.style.color=color;
+      element.style.fontSize=size;
+    }
+  </script>
+</body>
+</html>

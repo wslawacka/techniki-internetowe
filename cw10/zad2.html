@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.7.1.min.js"></script>
+  <title>Zadanie 2</title>
+</head>
+<body>
+  <ul>
+    <li id="el1">Jeden</li>
+    <li id="el2">Dwa</li>
+    <li id="el3">Trzy</li>
+    <li id="el4">Cztery</li>
+  </ul>
+
+  <script>
+    $(document).ready(function(){
+      var newElement = $('<p>Nowy element</p>');
+      newElement.insertBefore('ul:first');
+      newElement.clone().insertAfter('ul:last');
+    });
+  </script>
+</body>
+</html>

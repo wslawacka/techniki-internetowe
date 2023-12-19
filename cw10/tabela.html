@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.7.1.min.js"></script>
+  <title>Tabela</title>
+</head>
+<body>
+  <table> 
+    <thead> 
+    <tr> 
+    <th>ID</th> 
+    <th>Nazwisko</th> 
+    <th>Imię</th> 
+    <th>Zawód</th> 
+    </tr> 
+    </thead> 
+    <tbody> 
+    <tr> 
+    <td>123</td> 
+    <td>AAA</td> 
+    <td>Azs</td> 
+    <td>Swww</td> 
+    </tr> 
+    <tr> 
+      <td>123</td> 
+      <td>AAA</td> 
+      <td>Azs</td> 
+      <td>Swww</td> 
+      </tr> 
+      <tr> 
+        <td>123</td> 
+        <td>AAA</td> 
+        <td>Azs</td> 
+        <td>Swww</td> 
+        </tr> 
+        <tr> 
+          <td>123</td> 
+          <td>AAA</td> 
+          <td>Azs</td> 
+          <td>Swww</td> 
+          </tr> 
+          <tr> 
+            <td>123</td> 
+            <td>AAA</td> 
+            <td>Azs</td> 
+            <td>Swww</td> 
+            </tr> 
+            <tr> 
+              <td>123</td> 
+              <td>AAA</td> 
+              <td>Azs</td> 
+              <td>Swww</td> 
+              </tr> 
+              <tr> 
+                <td>123</td> 
+                <td>AAA</td> 
+                <td>Azs</td> 
+                <td>Swww</td> 
+                </tr> 
+    </tbody> 
+    </table>
+
+
+  <script>
+    $(document).ready(function() {
+      $('tbody tr:even').css({
+        'background-color': '#ddd',
+        'color': '#666',
+        'font-size': '11pt',
+        'line-height': '2.5em'
+      });
+    });
+  </script>
+</body>
+</html>

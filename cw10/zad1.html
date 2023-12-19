@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.7.1.min.js"></script>
+  <title>Zadanie 1</title>
+</head>
+<body>
+  <p id="panel" style="display: none; background-color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloribus nisi porro sapiente, officiis fugiat quaerat facilis. Explicabo nemo ratione corporis eveniet recusandae architecto, itaque autem dolore, aperiam commodi natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti explicabo, suscipit, recusandae reiciendis eligendi perspiciatis, odit ducimus in dolores porro optio dolor fuga quia aliquam pariatur. Autem deleniti nemo incidunt!</p>
+  <button id="slide">slide panel</button>
+
+  <script>
+    $(document).ready(function(){
+      $('#slide').click(function(){
+        $('#panel').slideToggle(500);
+      });
+    });
+  </script>
+  
+</body>
+</html>

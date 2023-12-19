@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Położenie kursora</title>
+  <style>
+    #box{
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      background-color: red;
+    }
+    #out{
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <div id="out"></div>
+  <script>
+    const box = document.getElementById('box');
+    const out = document.getElementById('out');
+
+    box.addEventListener('click', e => {
+      out.textContent=`Pozycja myszki: ${e.clientX}, ${e.clientY}`;
+      })
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nasłuchiwanie zdarzeń</title>
+</head>
+<body>
+  <button id="btn">Kliknij!</button>
+  <button id="btn1">Kliknij1!</button>
+
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener('click', ()=> {
+      alert('Kliknięto przycisk!')
+    })
+    const btn1 = document.getElementById("btn1");
+    btn1.addEventListener('click', clickHandler);
+
+    function clickHandler(){
+      alert('Kliknięto przycisk1!');
+      btn1.removeEventListener('click', clickHandler);
+    }
+  </script>
+  
+</body>
+</html>
